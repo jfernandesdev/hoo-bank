@@ -1,14 +1,16 @@
 import { ThemeProvider } from 'styled-components'
-import { Navbar } from './components/Navbar'
 import { GlobalStyle } from './styles/global'
 import { defaultTheme } from './styles/themes/default'
+
+import { Navbar } from './components/Navbar'
+import { SectionMain } from './components/SectionMain'
 
 export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
       <Navbar />
-      <h1>Hello World!</h1>
+      <SectionMain />
     </ThemeProvider>
   )
 }
