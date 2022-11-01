@@ -6,6 +6,7 @@ import { Navbar } from './components/Navbar'
 import { SectionMain } from './components/SectionMain'
 import { OurNumbers } from './components/OurNumbers'
 import { SectionAbout } from './components/SectionAbout'
+import { SectionFeatures } from './components/SectionFeatures'
 
 export function App() {
   return (
@@ -15,6 +16,7 @@ export function App() {
       <SectionMain />
       <OurNumbers />
       <SectionAbout />
+      <SectionFeatures />
     </ThemeProvider>
   )
 }
