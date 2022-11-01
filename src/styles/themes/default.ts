@@ -5,6 +5,7 @@ export const defaultTheme = {
   
   background: '#00040F',
   'base-label': '#3A536B',
+  'button-text': '#00040E',
 
   gray700: '#424147',
   

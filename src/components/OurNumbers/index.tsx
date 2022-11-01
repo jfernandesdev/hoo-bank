@@ -1,3 +1,4 @@
+import React from 'react'
 import {
   Container,
   ItemWrapper,
@@ -16,13 +17,13 @@ export function OurNumbers() {
   return(
     <Container>
       {ourNumbers.map((item) => (
-        <>
-          <ItemWrapper key={item.description}>
+        <React.Fragment key={item.description}>
+          <ItemWrapper>
             <Amount>{item.amount}</Amount>
             <Description>{item.description}</Description>
           </ItemWrapper>
           <Separator />
-        </>
+        </React.Fragment>
       ))}
     </Container>
   ) 

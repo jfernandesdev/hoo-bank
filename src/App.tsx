@@ -5,6 +5,7 @@ import { defaultTheme } from './styles/themes/default'
 import { Navbar } from './components/Navbar'
 import { SectionMain } from './components/SectionMain'
 import { OurNumbers } from './components/OurNumbers'
+import { SectionAbout } from './components/SectionAbout'
 
 export function App() {
   return (
@@ -13,6 +14,7 @@ export function App() {
       <Navbar />
       <SectionMain />
       <OurNumbers />
+      <SectionAbout />
     </ThemeProvider>
   )
 }
