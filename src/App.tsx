@@ -7,6 +7,7 @@ import { SectionMain } from './components/SectionMain'
 import { OurNumbers } from './components/OurNumbers'
 import { SectionAbout } from './components/SectionAbout'
 import { SectionFeatures } from './components/SectionFeatures'
+import { SectionSolution } from './components/SectionSolution'
 
 export function App() {
   return (
@@ -17,6 +18,7 @@ export function App() {
       <OurNumbers />
       <SectionAbout />
       <SectionFeatures />
+      <SectionSolution />
     </ThemeProvider>
   )
 }
