@@ -24,7 +24,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${(props) => props.theme.background};
+    background: url('/background.svg'), ${(props) => props.theme.background};;
+    background-size: cover;
+    background-repeat: no-repeat; 
     color: ${(props) => props.theme.white70};
     -webkit-font-smoothing: antialiased;
   }

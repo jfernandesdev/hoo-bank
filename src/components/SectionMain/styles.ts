@@ -3,11 +3,11 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  min-height: calc(100vh - 202px);
+  min-height: calc(100vh - 150px);
   max-width: 1200px;
   margin: 0 auto;
 
-  :before {
+  /* :before {
     content: '';
     position: absolute;
     left: -108px;
@@ -17,7 +17,7 @@ export const Container = styled.div`
     background: #FFFFFF;
     z-index: -1;
     filter: blur(225px);
-  }
+  } */
 
  > div {
   max-width: 60%;

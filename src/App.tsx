@@ -4,6 +4,7 @@ import { defaultTheme } from './styles/themes/default'
 
 import { Navbar } from './components/Navbar'
 import { SectionMain } from './components/SectionMain'
+import { OurNumbers } from './components/OurNumbers'
 
 export function App() {
   return (
@@ -11,6 +12,7 @@ export function App() {
       <GlobalStyle />
       <Navbar />
       <SectionMain />
+      <OurNumbers />
     </ThemeProvider>
   )
 }
