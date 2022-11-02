@@ -11,6 +11,7 @@ import { SectionSolution } from './components/SectionSolution'
 import { SectionFeedbacks } from './components/SectionFeedbacks'
 import { SectionCustomers } from './components/SectionCustomers'
 import { CtaBox } from './components/CtaBox'
+import { Footer } from './components/Footer'
 
 export function App() {
   return (
@@ -25,6 +26,7 @@ export function App() {
       <SectionFeedbacks />
       <SectionCustomers />
       <CtaBox />
+      <Footer />
     </ThemeProvider>
   )
 }
