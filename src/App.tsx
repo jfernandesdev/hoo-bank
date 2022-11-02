@@ -8,6 +8,7 @@ import { OurNumbers } from './components/OurNumbers'
 import { SectionAbout } from './components/SectionAbout'
 import { SectionFeatures } from './components/SectionFeatures'
 import { SectionSolution } from './components/SectionSolution'
+import { SectionFeedbacks } from './components/SectionFeedbacks'
 
 export function App() {
   return (
@@ -19,6 +20,7 @@ export function App() {
       <SectionAbout />
       <SectionFeatures />
       <SectionSolution />
+      <SectionFeedbacks />
     </ThemeProvider>
   )
 }
