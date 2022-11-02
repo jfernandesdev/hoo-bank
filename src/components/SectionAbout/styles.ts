@@ -13,6 +13,20 @@ export const Container = styled.div`
       margin-top: 3rem;
     }
   }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2.25rem;
+    margin: 0 auto 5rem;
+
+    > div {
+      button {
+        margin-top: 1rem;
+      }
+    }
+  }
 `
 
 export const Icon = styled.div`

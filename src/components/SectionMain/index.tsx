@@ -4,7 +4,7 @@ import { Container, Tag, Title, ImageContainer } from './styles'
 
 export function SectionMain() {
   return (
-    <Container>
+    <Container id="home">
       <div>
         <Tag>
           <img src="./icon-discount.svg" />

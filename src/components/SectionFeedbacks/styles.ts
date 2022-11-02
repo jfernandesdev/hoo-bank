@@ -12,19 +12,38 @@ export const Header = styled.div`
   grid-template-columns: 40% 40%;
   gap:  8rem;
   margin-bottom: 5.75rem;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    padding: 0 2.25rem;
+    margin-bottom: 3rem;
+  }
 `
 
 export const CardList = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+
+  @media (max-width: 768px) {
+    overflow-x: scroll;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
 `
 
 export const Card = styled.div`
   background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
   backdrop-filter: blur(5px);
   border-radius: 20px;  
-  padding: 45px;
+  padding: 2.8rem;
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    width: 250px;
+  }
 `
 
 export const QuotationMarks = styled.div`
@@ -44,6 +63,10 @@ export const Comment = styled.p`
   max-height: 128px;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+  }
 `
 
 export const CardFooter = styled.div`
@@ -61,6 +84,11 @@ export const CardFooter = styled.div`
       font-size: 1.25rem;
       line-height: 32px;
       color: ${(props) => props.theme.white};
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+        line-height: 18px;
+      }
     }
 
     span {
@@ -69,6 +97,11 @@ export const CardFooter = styled.div`
       line-height: 24px;
       color: ${(props) => props.theme.white70};
       opacity: 0.5;
+
+       @media (max-width: 768px) {
+        font-size: 0.8rem;
+        line-height: 18px;
+      }
     }
   }
 `

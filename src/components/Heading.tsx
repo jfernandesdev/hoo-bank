@@ -8,4 +8,9 @@ export const Heading = styled.h2`
   letter-spacing: 0.01em;
 
   margin-bottom: 1.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+    line-height: 140%;
+  }
 `;

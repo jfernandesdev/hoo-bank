@@ -10,11 +10,13 @@ const listCustomers = [
 export function SectionCustomers() {
   return (
     <Container>
-      {listCustomers.map(item => (
-        <a key={item.name}>
-          <img src={item.image} alt={item.name} />
-        </a>
-      ))}
+      <div>
+        {listCustomers.map(item => (
+          <a key={item.name}>
+            <img src={item.image} alt={item.name} />
+          </a>
+        ))}
+      </div>
     </Container>
   )
 }

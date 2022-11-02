@@ -1,7 +1,7 @@
 import { Text } from '../Text'
 import { LogoHooBank } from '../LogoHooBank'
 
-import { Container, Links, Copyright } from './styles'
+import { Container, Links, Copyright, GoToTop } from './styles'
 
 const usefulLinks = [
   { title: 'Content', url: '#' },
@@ -88,6 +88,10 @@ export function Footer() {
           </a>
         </div>
       </Copyright>
+
+      <GoToTop onClick={() => {window.scrollTo({ top: 0, behavior: 'smooth' })}}>
+        <img src="/icon-arrow-top.svg" />
+      </GoToTop>
     </Container>
   )
 }

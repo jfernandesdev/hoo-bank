@@ -23,10 +23,12 @@ export const GlobalStyle = createGlobalStyle`
     background: transparent;
   }
 
+  html, body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
   body {
-    /* background: url('/background.svg'), ${(props) => props.theme.background};;
-    background-size: cover;
-    background-repeat: no-repeat;  */
     background: ${(props) => props.theme.background};
     color: ${(props) => props.theme.white70};
     -webkit-font-smoothing: antialiased;
@@ -34,6 +36,22 @@ export const GlobalStyle = createGlobalStyle`
 
   body, input, textarea, button {
     font: 400 1rem 'Poppins', sans-serif;
+  }
+
+  @media (max-width: 1366px) {
+    html {
+      font-size: 80%;
+    }
+  }
+  @media (max-width: 1080px) {
+    html {
+      font-size: 93.75%;
+    }
+  }
+  @media (max-width: 720px) {
+    html {
+      font-size: 87.50%;
+    }
   }
 
   @keyframes hamburger4animTop {
@@ -68,5 +86,13 @@ export const GlobalStyle = createGlobalStyle`
       opacity: 1;
     }
   }
-}
+
+  @keyframes slide-auto-scroll {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-500px, 0, 0); /* The image width */
+    }
+    }
 `

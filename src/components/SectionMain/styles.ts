@@ -6,18 +6,7 @@ export const Container = styled.div`
   min-height: calc(100vh - 150px);
   max-width: 1200px;
   margin: 0 auto;
-
-  /* :before {
-    content: '';
-    position: absolute;
-    left: -108px;
-    width: 195px;
-    height: 324px;
-    border-radius: 100%;
-    background: #FFFFFF;
-    z-index: -1;
-    filter: blur(225px);
-  } */
+  overflow: hidden;
 
  > div {
   max-width: 60%;
@@ -26,6 +15,21 @@ export const Container = styled.div`
     max-width: 65%;
   }
  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 2.25rem;
+
+
+    > div {
+      max-width: 100%;
+
+      > p {
+        max-width: 100%;
+      }
+    }
+  }
 `
 
 export const Tag = styled.div`
@@ -44,6 +48,11 @@ export const Tag = styled.div`
   > span > span {
     font-weight: 400;
     color: ${(props) => props.theme.white};
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    font-size: 0.9rem;
   }
 `
 
@@ -64,10 +73,22 @@ export const Title = styled.h1`
     background-clip: text;
     text-fill-color: transparent;
   }
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
 `
 
 export const ImageContainer = styled.img`
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  @media(min-width: 769px) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  @media (max-width: 768px) {
+    width: 120%;
+    margin-right: -20%;
+  }
 `

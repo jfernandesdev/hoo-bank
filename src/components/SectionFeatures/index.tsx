@@ -5,7 +5,7 @@ import { Container, AppsStore } from './styles'
 
 export function SectionFeatures() {
   return (
-    <Container>
+    <Container id="features">
       <div>
         <img src="./mockup-features.svg" />
       </div>

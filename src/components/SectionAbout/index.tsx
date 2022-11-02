@@ -10,7 +10,7 @@ import {
 
 export function SectionAbout() {
   return (
-    <Container>
+    <Container id="about">
       <div>
         <Heading>You do the business, we&#39;ll handle the money.</Heading>
         <Text variant="lg">With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market.</Text>

@@ -10,10 +10,10 @@ import {
 } from './styles'
 
 const listMenu = [
-  { title: 'Home', url: 'home' },
-  { title: 'About Us', url: 'about' },
-  { title: 'Features', url: 'features' },
-  { title: 'Solution', url: 'solution' },
+  { title: 'Home', url: '#home' },
+  { title: 'About Us', url: '#about' },
+  { title: 'Features', url: '#features' },
+  { title: 'Solution', url: '#solution' },
 ]
 
 export function Navbar() {

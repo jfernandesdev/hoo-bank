@@ -11,13 +11,24 @@ export const Container = styled.div<ContainerProps>`
 
   max-width: 1200px;
   margin: 4rem auto 10rem;
-  
+
+  @media (max-width: 768px) {
+    margin: 4rem auto 5rem;
+    justify-content: space-around;
+    overflowX: scroll;
+  }
 `
 
 export const ItemWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+  }
 `
 
 export const Amount = styled.strong`
@@ -25,6 +36,10 @@ export const Amount = styled.strong`
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 130%;
+
+  @media (max-width: 768px) {
+    font-size: 1.7rem;
+  }
 `
 
 export const Description = styled.span`
@@ -36,6 +51,11 @@ export const Description = styled.span`
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
 `
 
 export const Separator = styled.span`
@@ -47,6 +67,10 @@ export const Separator = styled.span`
   transform: rotate(90deg);
 
   :last-child {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
     display: none;
   }
 `
