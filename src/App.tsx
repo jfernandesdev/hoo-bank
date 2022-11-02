@@ -10,6 +10,7 @@ import { SectionFeatures } from './components/SectionFeatures'
 import { SectionSolution } from './components/SectionSolution'
 import { SectionFeedbacks } from './components/SectionFeedbacks'
 import { SectionCustomers } from './components/SectionCustomers'
+import { CtaBox } from './components/CtaBox'
 
 export function App() {
   return (
@@ -23,6 +24,7 @@ export function App() {
       <SectionSolution />
       <SectionFeedbacks />
       <SectionCustomers />
+      <CtaBox />
     </ThemeProvider>
   )
 }

@@ -12,6 +12,7 @@ export const Button = styled.button`
   text-transform: capitalize;
   cursor: pointer;
   transition: filter 0.2s;
+  white-space: nowrap;
 
   &:hover {
     filter: brightness(0.8);
