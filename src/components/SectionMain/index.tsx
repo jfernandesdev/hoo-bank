@@ -15,7 +15,7 @@ export function SectionMain() {
         <Text variant="lg">Our team of experts uses a methodology to identify the credit cards most likely to fit your needs. <br />We examine annual percentage rates, annual fees.</Text>
       </div>
 
-      <ImageContainer src="./mockup-main.svg" />
+      <ImageContainer src="./mockup-main.png" />
      </Container>
   )
 }

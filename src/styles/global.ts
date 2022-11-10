@@ -29,9 +29,17 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${(props) => props.theme.background};
+    background: url('bgGradient.png'), ${(props) => props.theme.background};
+    background-repeat: no-repeat;
+    background-size: cover;
     color: ${(props) => props.theme.white70};
     -webkit-font-smoothing: antialiased;
+
+    @media (max-width: 768px) {
+      background: url('bgGradientMobile.png'), ${(props) => props.theme.background};
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 
   body, input, textarea, button {

@@ -4,8 +4,9 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto 10rem;
+  padding: 0 3rem;
   gap: 4.8rem;
 
   > div {
@@ -71,5 +72,10 @@ export const ItemWrapper = styled.div`
     line-height: 130%;
     letter-spacing: 0.01em;
     margin-bottom: 0.5rem;
+  }
+
+  @media(max-width: 768px) {
+    background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+    box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
   }
 `

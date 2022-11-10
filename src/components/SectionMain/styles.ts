@@ -3,9 +3,9 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  min-height: calc(100vh - 150px);
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1280px;
+  margin: 5rem auto 0;
+  padding: 5rem 3rem;
   overflow: hidden;
 
  > div {
@@ -81,9 +81,9 @@ export const Title = styled.h1`
 `
 
 export const ImageContainer = styled.img`
-  @media(min-width: 769px) {
+  @media(min-width: 769px) and (max-width: 1600px) {
     position: absolute;
-    bottom: 0;
+    bottom: -3rem;
     right: 0;
   }
 

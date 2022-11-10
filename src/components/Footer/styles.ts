@@ -1,12 +1,13 @@
 import styled from 'styled-components'
 
 export const Container = styled.footer`
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 
   display: flex;
   flex-direction: column;
   position: relative;
+  padding: 0 3rem;
 
   @media (max-width: 768px) {
     padding: 0 2.25rem;
@@ -113,7 +114,7 @@ export const GoToTop = styled.button`
   border: 0;
   border-radius: 10px;
   bottom: 1.5rem;
-  right: -10rem;
+  right: -10%;
   cursor: pointer;
   transparent: filter 0.2s;
 
