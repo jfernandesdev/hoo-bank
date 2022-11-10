@@ -4,7 +4,8 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 60% 40%;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1280px;
+  padding: 0 3rem;
   margin: 0 auto 10rem;
   
   @media (max-width: 768px) {

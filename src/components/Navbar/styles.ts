@@ -1,19 +1,37 @@
 import styled from 'styled-components'
 
 export const NavbarContainer = styled.div`
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  height: 5rem;
+  top: 0;
+  left: 0;
+
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2.25rem 0;
+  justify-content: center;
+  z-index: 999;
+  transition: all 0.5s ease;
+
+  &.fixed {
+    background: linear-gradient(-144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(0px);
+  }
+  
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    padding: 0 3rem;
+    width: 100%;
+  }
 
   svg {
     z-index: 1;
-  }
-
-  @media(max-width: 768px) {
-    padding: 2.25rem;
   }
 `
 

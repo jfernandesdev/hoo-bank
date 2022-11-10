@@ -9,11 +9,13 @@ export const Container = styled.div<ContainerProps>`
   justify-content: space-between;
   align-items: center;
 
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 4rem auto 10rem;
+  padding: 0 3rem;
 
   @media (max-width: 768px) {
     margin: 4rem auto 5rem;
+    padding: 0 2rem;
     justify-content: space-around;
     overflowX: scroll;
   }
